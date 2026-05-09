@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Taalla Teja - Software Engineer | Python Full Stack Developer | Portfolio" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Taalla Teja | Software Engineer" />
+    <meta property="og:description" content="Personal portfolio of Taalla Teja — Python Full Stack Developer & Software Engineer." />
+    <meta property="og:type" content="website" />
+    <title>Taalla Teja | Software Engineer</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts: Inter + Fira Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80">
+
+    <!-- ===== NAVBAR ===== -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top" role="navigation">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#hero">
+          <span class="accent">&lt;</span>TaallaTeja<span class="accent">/&gt;</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list nav-toggle-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto gap-1">
+            <li class="nav-item"><a class="nav-link nav-pill" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link nav-pill" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link nav-pill" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link nav-pill" href="#internship">Internship</a></li>
+            <li class="nav-item"><a class="nav-link nav-pill" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link nav-pill" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" class="hero-section d-flex align-items-center">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container position-relative">
+        <div class="row align-items-center min-vh-100 py-5">
+
+          <!-- Hero Text -->
+          <div class="col-lg-7 col-md-12 hero-text fade-in-left">
+            <p class="hero-greeting mb-2">
+              <span class="font-mono accent">$ Hello, World! 👋</span>
+            </p>
+            <h1 class="hero-name fw-bold mb-2">
+              I'm <span class="gradient-text">Taalla Teja</span>
+            </h1>
+            <h2 class="hero-role mb-3">
+              <span class="font-mono muted-txt">{"role": "</span><span
+                class="typed-output accent fw-semibold" id="typedOutput"></span><span
+                class="typed-cursor accent" id="typedCursor">|</span><span
+                class="font-mono muted-txt">"}</span>
+            </h2>
+            <p class="hero-intro lead mb-4">
+              A passionate fresher Software Engineer skilled in
+              <strong class="accent">Python Full Stack Development</strong>.
+              I love turning ideas into elegant, functional solutions and am always
+              eager to learn, build, and grow in the ever-evolving tech landscape.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mb-4">
+              <a href="#resume" class="btn btn-accent btn-lg">
+                <i class="bi bi-download me-2"></i>Download Resume
+              </a>
+              <a href="#contact" class="btn btn-outline-accent btn-lg">
+                <i class="bi bi-envelope me-2"></i>Contact Me
+              </a>
+            </div>
+            <div class="d-flex gap-3">
+              <a href="https://github.com/" target="_blank" rel="noopener" class="social-link" title="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-link" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="mailto:taalateja@email.com" class="social-link" title="Email"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+          </div>
+
+          <!-- Hero Profile Image -->
+          <div class="col-lg-5 col-md-12 text-center mt-5 mt-lg-0 fade-in-right">
+            <div class="profile-wrapper mx-auto">
+              <div class="profile-ring">
+                <div class="profile-inner">
+                  <div class="profile-placeholder">
+                    <i class="bi bi-person-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="float-badge badge-py">
+                <i class="bi bi-filetype-py me-1"></i>Python
+              </div>
+              <div class="float-badge badge-dj">
+                <i class="bi bi-braces me-1"></i>Django
+              </div>
+              <div class="float-badge badge-ht">
+                <i class="bi bi-filetype-html me-1"></i>HTML/CSS
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator text-center">
+          <a href="#about" class="scroll-down"><i class="bi bi-chevron-double-down"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="section-pad">
+      <div class="container">
+        <div class="section-hdr text-center mb-5 reveal">
+          <span class="section-tag font-mono accent">// about_me</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <div class="divider mx-auto"></div>
+        </div>
+
+        <div class="row align-items-center g-5">
+          <!-- Code Visual -->
+          <div class="col-lg-4 text-center reveal">
+            <div class="code-visual">
+              <div class="code-line"><span class="kw">const</span> <span class="cv">developer</span> = {</div>
+              <div class="code-line indent"><span class="ck">name:</span> <span class="cs">"Taalla Teja"</span>,</div>
+              <div class="code-line indent"><span class="ck">role:</span> <span class="cs">"Software Engineer"</span>,</div>
+              <div class="code-line indent"><span class="ck">stack:</span> <span class="cs">"Python Full Stack"</span>,</div>
+              <div class="code-line indent"><span class="ck">passion:</span> <span class="cs">"Problem Solving"</span>,</div>
+              <div class="code-line indent"><span class="ck">available:</span> <span class="cb">true</span></div>
+              <div class="code-line">};</div>
+            </div>
+          </div>
+
+          <!-- About Text -->
+          <div class="col-lg-8 reveal">
+            <h3 class="mb-3">Hi! I'm <span class="gradient-text">Taalla Teja</span>, a passionate software engineer.</h3>
+            <p class="about-text mb-3">
+              I hold a <strong class="accent">B.Tech in Computer Science and Engineering</strong> and also
+              have a foundation from a <strong class="accent">Diploma in Mechanical Engineering</strong>,
+              giving me a unique blend of technical and analytical thinking.
+            </p>
+            <p class="about-text mb-3">
+              My primary expertise is in <strong class="accent">Python Full Stack Development</strong>, where I build
+              end-to-end web applications using Django, REST APIs, HTML, CSS, JavaScript, and Bootstrap.
+            </p>
+            <p class="about-text mb-4">
+              I have a <strong class="accent">strong interest in software development and problem solving</strong>.
+              Whether it's designing clean UIs or architecting backend logic, I'm always eager to learn new technologies
+              and tackle real-world challenges with code.
+            </p>
+
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6">
+                <div class="info-card">
+                  <i class="bi bi-mortarboard-fill accent"></i>
+                  <div><span class="info-label">Degree</span><span class="info-val">B.Tech CSE</span></div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="info-card">
+                  <i class="bi bi-geo-alt-fill accent"></i>
+                  <div><span class="info-label">Location</span><span class="info-val">India</span></div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="info-card">
+                  <i class="bi bi-code-slash accent"></i>
+                  <div><span class="info-label">Specialization</span><span class="info-val">Full Stack Python</span></div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="info-card">
+                  <i class="bi bi-briefcase-fill accent"></i>
+                  <div><span class="info-label">Status</span><span class="info-val status-open">Open to Work</span></div>
+                </div>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-accent">
+              <i class="bi bi-chat-dots me-2"></i>Let's Connect
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="section-pad section-dark">
+      <div class="container">
+        <div class="section-hdr text-center mb-5 reveal">
+          <span class="section-tag font-mono accent">// my_skills</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <div class="divider mx-auto"></div>
+          <p class="section-sub">Technologies I work with</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+          <!-- Python -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 reveal">
+            <div class="skill-card">
+              <div class="skill-icon sk-python">
+                <svg viewBox="0 0 128 128" class="skill-svg" aria-label="Python">
+                  <path fill="#3572A5" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z"/>
+                  <path fill="#FFD43B" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z"/>
+                </svg>
+              </div>
+              <p class="skill-name">Python</p>
+            </div>
+          </div>
+
+          <!-- HTML5 -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 reveal">
+            <div class="skill-card">
+              <div class="skill-icon sk-html">
+                <i class="bi bi-filetype-html"></i>
+              </div>
+              <p class="skill-name">HTML5</p>
+            </div>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 reveal">
+            <div class="skill-card">
+              <div class="skill-icon sk-css">
+                <i class="bi bi-filetype-css"></i>
+              </div>
+              <p class="skill-name">CSS3</p>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 reveal">
+            <div class="skill-card">
+              <div class="skill-icon sk-js">
+                <i class="bi bi-filetype-js"></i>
+              </div>
+              <p class="skill-name">JavaScript</p>
+            </div>
+          </div>
+
+          <!-- Bootstrap -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 reveal">
+            <div class="skill-card">
+              <div class="skill-icon sk-bs">
+                <i class="bi bi-bootstrap-fill"></i>
+              </div>
+              <p class="skill-name">Bootstrap</p>
+            </div>
+          </div>
+
+          <!-- Django -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 reveal">
+            <div class="skill-card">
+              <div class="skill-icon sk-django">
+                <i class="bi bi-braces-asterisk"></i>
+              </div>
+              <p class="skill-name">Django</p>
+            </div>
+          </div>
+
+          <!-- MySQL -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 reveal">
+            <div class="skill-card">
+              <div class="skill-icon sk-mysql">
+                <i class="bi bi-database-fill"></i>
+              </div>
+              <p class="skill-name">MySQL</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="section-pad">
+      <div class="container">
+        <div class="section-hdr text-center mb-5 reveal">
+          <span class="section-tag font-mono accent">// featured_project</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Project</span></h2>
+          <div class="divider mx-auto"></div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10 reveal">
+            <div class="project-card">
+              <div class="row g-0 align-items-stretch">
+
+                <!-- Project Visual -->
+                <div class="col-lg-5">
+                  <div class="project-img-wrap">
+                    <div class="browser-mock">
+                      <div class="browser-bar">
+                        <span class="dot dot-r"></span>
+                        <span class="dot dot-y"></span>
+                        <span class="dot dot-g"></span>
+                        <span class="browser-url">taalla-teja.dev</span>
+                      </div>
+                      <div class="browser-body">
+                        <div class="mock-nav-bar"></div>
+                        <div class="mock-hero-block"></div>
+                        <div class="mock-cards-row">
+                          <div class="mock-c"></div>
+                          <div class="mock-c"></div>
+                          <div class="mock-c"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="featured-tag"><i class="bi bi-star-fill me-1"></i>Featured</span>
+                  </div>
+                </div>
+
+                <!-- Project Info -->
+                <div class="col-lg-7">
+                  <div class="project-body p-4 p-lg-5">
+                    <p class="proj-num font-mono accent">01.</p>
+                    <h3 class="proj-title mb-3">Personal Portfolio Website</h3>
+                    <p class="proj-desc mb-4">
+                      Designed and developed a fully responsive personal portfolio website to showcase
+                      skills, education, internship experience, and contact information using HTML, CSS,
+                      JavaScript, and Bootstrap. Features a dark modern UI, typing animations, smooth
+                      scroll effects, and interactive hover elements.
+                    </p>
+                    <div class="proj-tech mb-4">
+                      <span class="tech-tag">HTML5</span>
+                      <span class="tech-tag">CSS3</span>
+                      <span class="tech-tag">JavaScript</span>
+                      <span class="tech-tag">Bootstrap</span>
+                    </div>
+                    <div class="d-flex flex-wrap gap-3">
+                      <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-outline-accent">
+                        <i class="bi bi-github me-2"></i>GitHub
+                      </a>
+                      <a href="#" target="_blank" rel="noopener" class="btn btn-accent">
+                        <i class="bi bi-box-arrow-up-right me-2"></i>Live Demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INTERNSHIP SECTION ===== -->
+    <section id="internship" class="section-pad section-dark">
+      <div class="container">
+        <div class="section-hdr text-center mb-5 reveal">
+          <span class="section-tag font-mono accent">// experience</span>
+          <h2 class="section-title">Internship <span class="gradient-text">Experience</span></h2>
+          <div class="divider mx-auto"></div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 reveal">
+            <div class="timeline">
+              <div class="tl-item">
+                <div class="tl-dot"><i class="bi bi-briefcase-fill"></i></div>
+                <div class="tl-content">
+                  <div class="d-flex flex-wrap justify-content-between align-items-start mb-2">
+                    <div>
+                      <h4 class="tl-role">Python Full Stack Development Intern</h4>
+                      <p class="tl-company accent mb-1">
+                        <i class="bi bi-building me-1"></i>Progmaster Private Limited
+                      </p>
+                    </div>
+                    <span class="tl-badge"><i class="bi bi-calendar3 me-1"></i>Internship</span>
+                  </div>
+                  <p class="tl-desc">
+                    Gained hands-on experience in Python full stack development, working with frameworks and
+                    tools used in modern web application development. Built and maintained web application
+                    components using Django, HTML, CSS, JavaScript, and Bootstrap. Collaborated with the
+                    development team to deliver quality solutions within deadlines.
+                  </p>
+                  <div class="tl-skills mt-3">
+                    <span class="tech-tag sm">Python</span>
+                    <span class="tech-tag sm">Django</span>
+                    <span class="tech-tag sm">HTML/CSS</span>
+                    <span class="tech-tag sm">JavaScript</span>
+                    <span class="tech-tag sm">MySQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section id="education" class="section-pad">
+      <div class="container">
+        <div class="section-hdr text-center mb-5 reveal">
+          <span class="section-tag font-mono accent">// education</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <div class="divider mx-auto"></div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- B.Tech -->
+          <div class="col-lg-5 reveal">
+            <div class="edu-card h-100">
+              <div class="edu-icon"><i class="bi bi-mortarboard-fill"></i></div>
+              <div class="edu-body">
+                <span class="edu-badge">Higher Education</span>
+                <h4 class="edu-title">B.Tech in Computer Science and Engineering</h4>
+                <p class="edu-desc">
+                  Bachelor's degree in Computer Science and Engineering with focus on software development,
+                  algorithms, data structures, databases, and modern web technologies.
+                </p>
+                <ul class="edu-list">
+                  <li><i class="bi bi-check-circle-fill me-2 accent"></i>Data Structures &amp; Algorithms</li>
+                  <li><i class="bi bi-check-circle-fill me-2 accent"></i>Database Management Systems</li>
+                  <li><i class="bi bi-check-circle-fill me-2 accent"></i>Web Development</li>
+                  <li><i class="bi bi-check-circle-fill me-2 accent"></i>Software Engineering</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Diploma -->
+          <div class="col-lg-5 reveal">
+            <div class="edu-card h-100">
+              <div class="edu-icon edu-icon-sec"><i class="bi bi-tools"></i></div>
+              <div class="edu-body">
+                <span class="edu-badge edu-badge-sec">Foundation</span>
+                <h4 class="edu-title">Diploma in Mechanical Engineering</h4>
+                <p class="edu-desc">
+                  Completed a Diploma in Mechanical Engineering which built strong analytical,
+                  problem-solving, and engineering fundamentals that complement my software development journey.
+                </p>
+                <ul class="edu-list">
+                  <li><i class="bi bi-check-circle-fill me-2 accent"></i>Engineering Fundamentals</li>
+                  <li><i class="bi bi-check-circle-fill me-2 accent"></i>Analytical Thinking</li>
+                  <li><i class="bi bi-check-circle-fill me-2 accent"></i>Technical Problem Solving</li>
+                  <li><i class="bi bi-check-circle-fill me-2 accent"></i>Project Management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESUME SECTION ===== -->
+    <section id="resume" class="section-pad resume-section">
+      <div class="container">
+        <div class="row align-items-center justify-content-between g-4 reveal">
+          <div class="col-lg-7">
+            <span class="section-tag font-mono accent">// resume</span>
+            <h2 class="section-title mt-1">Download My <span class="gradient-text">Resume</span></h2>
+            <p class="muted-txt mt-2">
+              Get a detailed overview of my skills, education, projects, and internship experience in a clean, professional PDF.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="#" class="btn btn-accent btn-lg px-5" download>
+              <i class="bi bi-file-earmark-arrow-down me-2"></i>Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="section-pad">
+      <div class="container">
+        <div class="section-hdr text-center mb-5 reveal">
+          <span class="section-tag font-mono accent">// contact_me</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <div class="divider mx-auto"></div>
+          <p class="section-sub">I'd love to hear from you. Let's work together!</p>
+        </div>
+
+        <div class="row g-5">
+          <!-- Contact Info -->
+          <div class="col-lg-4 reveal">
+            <div class="contact-info">
+              <h4 class="mb-4">Contact Information</h4>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <span class="c-label">Email</span>
+                  <a href="mailto:taalateja@email.com" class="c-val">taalateja@email.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="bi bi-linkedin"></i></div>
+                <div>
+                  <span class="c-label">LinkedIn</span>
+                  <a href="https://linkedin.com/" target="_blank" rel="noopener" class="c-val">linkedin.com/in/taalateja</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="bi bi-github"></i></div>
+                <div>
+                  <span class="c-label">GitHub</span>
+                  <a href="https://github.com/" target="_blank" rel="noopener" class="c-val">github.com/taalateja</a>
+                </div>
+              </div>
+
+              <div class="d-flex gap-3 mt-4">
+                <a href="https://github.com/" target="_blank" rel="noopener" class="social-link" title="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-link" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="mailto:taalateja@email.com" class="social-link" title="Email"><i class="bi bi-envelope-fill"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-lg-8 reveal">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control dark-input" id="cName" placeholder="Your Name" required />
+                    <label for="cName">Your Name</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control dark-input" id="cEmail" placeholder="Your Email" required />
+                    <label for="cEmail">Your Email</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input type="text" class="form-control dark-input" id="cSubject" placeholder="Subject" required />
+                    <label for="cSubject">Subject</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control dark-input" id="cMessage" placeholder="Your Message" style="height:150px" required></textarea>
+                    <label for="cMessage">Your Message</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-accent btn-lg w-100">
+                    <i class="bi bi-send-fill me-2"></i>Send Message
+                  </button>
+                </div>
+                <div id="formSuccess" class="col-12 d-none">
+                  <div class="success-alert d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Message sent! I'll get back to you soon.</span>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row align-items-center py-4">
+          <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+            <a class="footer-brand fw-bold" href="#hero">
+              <span class="accent">&lt;</span>TaallaTeja<span class="accent">/&gt;</span>
+            </a>
+          </div>
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <p class="footer-copy mb-0">
+              &copy; <span id="footerYear"></span> Taalla Teja &mdash;
+              Crafted with <i class="bi bi-heart-fill text-danger"></i> &amp; Code
+            </p>
+          </div>
+          <div class="col-md-4 text-center text-md-end">
+            <div class="d-flex gap-3 justify-content-center justify-content-md-end">
+              <a href="https://github.com/" target="_blank" rel="noopener" class="social-link" title="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-link" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="mailto:taalateja@email.com" class="social-link" title="Email"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== SCROLL TO TOP BUTTON ===== -->
+    <button id="scrollToTop" class="scroll-top" aria-label="Back to top" title="Back to top">
+      <i class="bi bi-arrow-up-short"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="./src/script.js"></script>
+  </body>
+</html>

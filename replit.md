@@ -1,45 +1,49 @@
-# [Project name]
+# Taalla Teja Portfolio
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A modern, dark-themed personal portfolio website for Taalla Teja — a fresher Software Engineer specializing in Python Full Stack Development.
 
 ## Run & Operate
 
+- `pnpm --filter @workspace/portfolio run dev` — run the portfolio (preview at `/`)
 - `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
 - `pnpm run typecheck` — full typecheck across all packages
-- `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
 
 ## Stack
 
 - pnpm workspaces, Node.js 24, TypeScript 5.9
-- API: Express 5
-- DB: PostgreSQL + Drizzle ORM
-- Validation: Zod (`zod/v4`), `drizzle-zod`
-- API codegen: Orval (from OpenAPI spec)
-- Build: esbuild (CJS bundle)
+- **Portfolio**: Plain HTML5 + CSS3 + JavaScript, served via Vite
+- **Styling**: Bootstrap 5 (CDN) + custom dark CSS with CSS variables
+- **Icons**: Bootstrap Icons (CDN)
+- **Fonts**: Inter + Fira Code (Google Fonts CDN)
+- API: Express 5 (shared api-server)
+- DB: PostgreSQL + Drizzle ORM (available but not used by portfolio)
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/portfolio/index.html` — full portfolio HTML (all sections)
+- `artifacts/portfolio/src/styles.css` — all custom dark-theme CSS styles
+- `artifacts/portfolio/src/script.js` — typing animation, scroll reveal, navbar, form logic
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- Portfolio is built as plain HTML/CSS/JS (not React) served via Vite — per user's explicit request
+- Bootstrap 5 loaded from CDN for zero build-step dependency
+- CSS custom properties (design tokens) control the entire color palette from `:root`
+- Intersection Observer API powers scroll-reveal and skill card stagger animations
+- No backend — contact form uses client-side simulation only
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+A fully responsive personal portfolio with 9 sections: Hero (typing animation), About, Skills (7 cards), Featured Project, Internship, Education, Resume download, Contact form, and Footer with social links.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- Separate HTML, CSS, and JS files (no React components)
+- Dark modern UI with cyan (#00d4ff) accent color
+- Bootstrap 5 for layout and components
+- Bootstrap Icons for iconography
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
-
-## Pointers
-
-- See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details
+- Bootstrap and Bootstrap Icons are loaded from jsDelivr CDN — no npm install needed
+- Changing the Vite base path requires updating internal asset references in index.html
