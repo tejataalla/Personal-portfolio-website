@@ -231,7 +231,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ============================================================
-     8. FOOTER YEAR — Automatically update copyright year
+     8. PROFILE IMAGE — Force fresh load to bypass cache
+     ============================================================ */
+  const profileImg = document.querySelector('.profile-photo');
+  if (profileImg) {
+    profileImg.src = '/profile.png?v=' + Date.now();
+  }
+
+  /* ============================================================
+     9. FOOTER YEAR — Automatically update copyright year
      ============================================================ */
   const footerYear = document.getElementById('footerYear');
   if (footerYear) {

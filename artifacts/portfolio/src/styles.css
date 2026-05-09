@@ -224,6 +224,7 @@ body {
   object-position: center top;
   border-radius: 50%;
   display: block;
+  filter: brightness(1.05) contrast(1.05);
 }
 
 /* Floating skill badges */
